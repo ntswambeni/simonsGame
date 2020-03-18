@@ -23,13 +23,13 @@ function nextSequence(){
 }
 
 $(".btn").on("click", function(){
-  if(started){
+//   if(started){
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
     playSound(userChosenColor);
     animatePressed(userChosenColor)
     checkAnswer(userClickedPattern);
-  }
+//   }
 });
 
 function startOver(){
