@@ -29,9 +29,11 @@ $(".btn").on("click", function(){
     playSound(userChosenColor);
     animatePressed(userChosenColor)
     checkAnswer(userClickedPattern);
-  }
-  
-  started = true;
+  }else{
+    $("h1").html("Level 0");
+    nextSequence();
+    started = true;
+  }   
 });
 
 function startOver(){
